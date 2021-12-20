@@ -1,0 +1,103 @@
+:root {
+    --cor1: #f5bd75;
+    --cor2: #F05700;
+    --cor3: #BD4500;
+    --cor4: #703E22;
+    --cor5: #421800;
+    
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #702900;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    overflow: hidden;
+}
+header>nav>a {
+    text-decoration: none;
+    color: #f5bd75;
+    margin-right: 25px;
+}
+header>nav> a:hover{
+    color: #F05700;
+}
+/* box-principal*/
+
+.container {
+font-size: 16px;
+height: 500px;
+background: linear-gradient(to left, rgba(0, 0, 0, 0.13),rgba(66, 24, 0, 0.89)100%), url(/img/my-wife-and-kids.jpg);
+background-size: cover;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+#mulheres {
+    color: var(--cor1);
+    padding-top: 100px;
+    padding-left: 20px;
+    margin-bottom: -130px ;
+}
+.box-principal {
+    padding-left: 20px;
+    width: 50%;
+    color: white;
+}
+.box-principal > a > button {
+    margin: 20px;
+    width: 150px;
+    height: 45px;
+    color: #f5bd75;
+    background-color: #bd45008f;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.box-principal > a > button:hover {
+    color: var(--cor5);
+    font-weight: bold;
+    background-color: #f5bd75;
+}
+button > i {
+    padding-right: 8px;
+}
+/* slides */
+.carrossel-filmes {
+    padding-left: 20px;
+}
+.titulos-slide {
+    color: #f5bd75;
+    padding: 0 0 10px 15px;
+
+}
+.box-filme {
+    width: 100px;
+    height: 250px;
+    display: block;
+    
+}
+.box-filme:hover {
+    zoom: 1.1;
+    
+}
+.sinopse {
+    padding-top: 5px;
+    text-align: start;
+    color:var(--cor1);
+    display: none;
+}
+.item:hover .sinopse {
+    display: block;
+}
+
